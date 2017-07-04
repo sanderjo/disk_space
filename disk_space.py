@@ -33,7 +33,7 @@ millis2 = int(round(time.time() * 1000))
 print "The df took [ms]:", millis2-millis1
 
 for line in result: 
-	if line.find("/dev/") >= 0 :
+	if line.find("/") >= 0 :
 		print line.rstrip()
 		print "Available [MB]:",  line.split()[3]
 
